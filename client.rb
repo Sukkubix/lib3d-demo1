@@ -1,6 +1,5 @@
 # Requires: gem 'multipart-post'
 
-require "byebug"
 require "uri"
 require "net/http"
 require "json"
@@ -47,7 +46,7 @@ loop do
     # 
 
     # TODO: Add whatever system call code you need here
-    system("echo 'We are generating a bunch of stuff'")
+    system("echo 'echo: We are generating a bunch of stuff'")
     # For demo, lets download benchy
     Net::HTTP.start("localhost", 3000) { |http|
       resp = http.get("/3DBenchy.stl")
